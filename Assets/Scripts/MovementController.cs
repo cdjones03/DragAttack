@@ -19,8 +19,10 @@ public class MovementController : MonoBehaviour
     public AnimationController animationController;
     private bool isGrounded; // To check if the player is on the ground
 
-    private const float MIN_Y = -6f;
-    private const float MAX_Y = 0.6f;
+    [SerializeField]
+    private float MIN_Y = -3f;
+    [SerializeField]
+    private float MAX_Y = 3.75f;
 
     void Start()
     {

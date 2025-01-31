@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         StartCoroutine(SpawnEnemyRoutine());
+        
     }
 
     private IEnumerator SpawnEnemyRoutine()
