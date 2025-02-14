@@ -8,9 +8,11 @@ public class AnimationController : MonoBehaviour
 
     public int currentHealth;
     public int maxHealth = 100;
-    public Animator animator;
 
-    private bool isForm1 = true; // Tracks current form
+    public Animator currentAnimator;
+    public Animator gownAnimator;
+    public Animator suitAnimator;
+    private bool isGownForm = true; // Tracks current form
     public float attackCooldown = 0.2f; // Attack cooldown
     private bool canAttack = true;
 
@@ -33,8 +35,8 @@ public class AnimationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentAnimator = gownAnimator;
         // Ensure animator1 is active at start
-        animator = GetComponent<Animator>();
         DisableAllHitboxes();
         currentHealth = maxHealth;
         healthBarInit();
@@ -59,11 +61,11 @@ public class AnimationController : MonoBehaviour
         // Switch forms when the spacebar is pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            animator.SetTrigger("SwitchForm");
-            isForm1 = !isForm1; // Toggle form
+            currentAnimator = currentAnimator == gownAnimator ? suitAnimator : gownAnimator;
+            isGownForm = !isGownForm; // Toggle form
 
             // Debug log to show form change
-            Debug.Log(isForm1 ? "Switched to Form 1" : "Switched to Form 2");
+            Debug.Log(isGownForm ? "Switched to Gown Form" : "Switched to Suit Form");
         }
     }
 
@@ -76,7 +78,7 @@ public class AnimationController : MonoBehaviour
             DisableAllHitboxes();
 
             // Get the hitbox based on current form
-            GameObject hitbox = isForm1 ? form1Attack1Hitbox : form2Attack1Hitbox;
+            GameObject hitbox = isGownForm ? form1Attack1Hitbox : form2Attack1Hitbox;
             
             // Set hitbox position based on facing direction
             Vector3 hitboxPosition = hitbox.transform.localPosition;
@@ -93,7 +95,7 @@ public class AnimationController : MonoBehaviour
             DisableAllHitboxes();
 
             // Get the hitbox based on current form
-            GameObject hitbox = isForm1 ? form1Attack2Hitbox : form2Attack2Hitbox;
+            GameObject hitbox = isGownForm ? form1Attack2Hitbox : form2Attack2Hitbox;
             
             // Set hitbox position based on facing direction
             Vector3 hitboxPosition = hitbox.transform.localPosition;
@@ -234,7 +236,7 @@ public class AnimationController : MonoBehaviour
         }
     }
 
-    public bool IsForm1() { return isForm1; }
+    public bool IsGownForm() { return isGownForm; }
 
     // Helper methods for item management
     public bool HasItem() { return hasItem; }

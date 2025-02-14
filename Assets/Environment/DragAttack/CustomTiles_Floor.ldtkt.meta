@@ -1,0 +1,3166 @@
+fileFormatVersion: 2
+guid: 37a4c1cfc50e447b08c8bcfc3f00d9d7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f3268c876daf4890b6af6cd462063137, type: 3}
+  _reimportOnDependencyChange: 1
+  _pixelsPerUnit: 16
+  _overrideTexture: {instanceID: 0}
+  _sprites:
+  - name: CustomTiles_Floor_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 4ec42012669a146d9a6146c77c1ce85f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 239
+      width: 16
+      height: 16
+    spriteID: d79a6254d02b042a3a6289960fddb21d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 3175bb8a85116483b9f29cce8fa5b5e0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 239
+      width: 16
+      height: 16
+    spriteID: bc445d6edd0aa4165a13e91041b15250
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 90870d756687f4e5bb1520344876c694
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 5e6d24789ee8040c9b5c03cbf9546f70
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 239
+      width: 16
+      height: 16
+    spriteID: cc2eddc97bfb24026853154bd7bb5fc9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 98c2e34e5b49e46a79ae797775b86541
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 239
+      width: 16
+      height: 16
+    spriteID: b2da12648077c410cae14e80e2858606
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 495ea2beed90a4dd9abdf71616aee9fc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 2cbe8cf77572a4ced9d1f4d42d41b4fd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 346d05e2ed8ed41ecaea5e6e6c89ca91
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 11977db0b5b9e424a9c272df2ed25032
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 82003a99c1a9249609fa11388fe3f4f0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 239
+      width: 16
+      height: 16
+    spriteID: 0007266bbb33645d181ad3f578d47bae
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 222
+      width: 16
+      height: 16
+    spriteID: d41ff50cb643c434f93cefe3b2a8e031
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 4ef841824ae3343d69a141ec258b8dbc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 11a1bb331f115479f98951ea80117679
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 4ea896b64b67c4bb2a428bc2f646b103
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 3e78140f363c54fd2823e2cd0b7452c6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 3dfebe12fcdea483b906a18b6bf780c3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 222
+      width: 16
+      height: 16
+    spriteID: f4f8c03a4ae8b4efe81786830718ed1f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 3614dbfb49ce543e283bd6261677e7d3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 222
+      width: 16
+      height: 16
+    spriteID: a1f5f1712656e437a896c2b53600502c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 6cd425edc51d845f797d40314e0dc463
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 32564fc195f6c4ca58c8cee9448e2adc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 222
+      width: 16
+      height: 16
+    spriteID: dc63123251735415e93dcf97b521e00f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 222
+      width: 16
+      height: 16
+    spriteID: 8fa2937560b7944a49123a19420187b9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 222
+      width: 16
+      height: 16
+    spriteID: f3eb47ba83a6041eca0e5864f2be8b79
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 222
+      width: 16
+      height: 16
+    spriteID: ce313e370deb948ac8f92abc2adb28e9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 205
+      width: 16
+      height: 16
+    spriteID: 5a42f919b56874e6da832af92f4ac12c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 205
+      width: 16
+      height: 16
+    spriteID: e4a3dc0aecf504cecb0b0752615deaca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 205
+      width: 16
+      height: 16
+    spriteID: 01595bbe1c9a94728942baecdaee5c34
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 205
+      width: 16
+      height: 16
+    spriteID: b28f6c1f8d9e84e1780b17f83a2d6fe2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 205
+      width: 16
+      height: 16
+    spriteID: f3931806fa3ff476b90dce3033dd8fc5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 205
+      width: 16
+      height: 16
+    spriteID: 19b70a116aff642f08c4fea52e80f7d9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 205
+      width: 16
+      height: 16
+    spriteID: cf0a2fe10cd334eae80017f370a5748d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 205
+      width: 16
+      height: 16
+    spriteID: eda8d3928d8e849c683358a9aacc67b1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 205
+      width: 16
+      height: 16
+    spriteID: 3c89b6934acdc42338f7aef3466512b1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 205
+      width: 16
+      height: 16
+    spriteID: e0c762650a90f420aa7043fa6be795f4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 205
+      width: 16
+      height: 16
+    spriteID: f352173cac78b46dea8990c68fa2c35e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 205
+      width: 16
+      height: 16
+    spriteID: 9294c631bd6e54be6b965d7618ad50cd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 205
+      width: 16
+      height: 16
+    spriteID: 118dbafecf5d3454fa21c5f478ec7dd0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 205
+      width: 16
+      height: 16
+    spriteID: a8364b506cd5845fd82be6dc0f70aeb8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 205
+      width: 16
+      height: 16
+    spriteID: dcfa16e173c1b450281ff265ea548237
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 5dc8462c88190436d961dd9c6ca6973d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 0f16bb8a4e332469e8466021847f8f05
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 7fcc6284acddd4836880daf6657eec19
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 2689178c7c98841f7866c469c088da1b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 384549c93e649481cb6372766ee70ad2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 4e63c2ad99fda43fb878288a565f3d4e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 188
+      width: 16
+      height: 16
+    spriteID: d4b4fbc052d20438885f160a5fda0683
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 3247cfe7268a94f5fabc6fabe408c878
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 188
+      width: 16
+      height: 16
+    spriteID: a5075b430b2dd4de0ace713ff7135686
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 188
+      width: 16
+      height: 16
+    spriteID: a774122c16e774787bcece6c774c510c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 188
+      width: 16
+      height: 16
+    spriteID: d220f3f10bd644a70beb0cf2e8991812
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 89dccc066187f4bf9872ce8d5cd90e1d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 0b7e14d4159804bd8923c141ac2f1f27
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 188
+      width: 16
+      height: 16
+    spriteID: adc37c39b6d0a4403abc01912a1b05c3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 188
+      width: 16
+      height: 16
+    spriteID: 0cca73f41dc1f481da13854dd366345d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 1671a4f819d8b413f97cfe6716ae2af3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 7c15b1caf98f549959a664ca09c7224a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 171
+      width: 16
+      height: 16
+    spriteID: b508f1534248a45f4860fc8e98136eac
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 8596edec498434635bda7e72e9176751
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 784342c7d48c14f29a409f4b1e99d669
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 171
+      width: 16
+      height: 16
+    spriteID: f0647fc01ae9c4ac29df07edbc9b3efc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 171
+      width: 16
+      height: 16
+    spriteID: de6f2714fc9314f46972fd4de23e6ae8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 7a434f4fa105f4ef2a182db5acae4ecc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 171
+      width: 16
+      height: 16
+    spriteID: afa2fa08b02374eb8bfae25d1d59ebde
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 09327c21714464fbc91f20282973b2d7
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 4fde5c5cc33b34ce6bb28c67b7d7224c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 9c42929d9792f47bfbfed8027bc9e03f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 99fb6b01fa75d4452a174934e1c9393c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 952b8ff6726fc4a71b6face4c29239e0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 171
+      width: 16
+      height: 16
+    spriteID: 0a03c6d5ce865438c9771c35cccd9a66
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 090641b683efc48f394f6fe331219cef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 447fa3b4f124d4205805ebbbf42a9a02
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 0cd03ef413df345d9936bcd8cf984b5d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 154
+      width: 16
+      height: 16
+    spriteID: a80fa4351d6104951aa869265692d28d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 154
+      width: 16
+      height: 16
+    spriteID: ebc2779b8abf14a8cb3fae1feb12d56d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 154
+      width: 16
+      height: 16
+    spriteID: b637e90b35a6a4633bbfc7d2151d5ae2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 43cea719fcc5941e8867448f94faf6e5
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 713bcd7941679429f9a22e61041f29f0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 816028b6455694ccd830827c86626f4b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 0d4d8e44f744b4d44be4a5698ea4e632
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 9d9b920dc535a4734bfc8785ac770d34
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 154
+      width: 16
+      height: 16
+    spriteID: b077e5f55f30b48f1a8e4e8eee9deb68
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 3eccae6fe90f74052add4847b64b995e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 154
+      width: 16
+      height: 16
+    spriteID: 2d869ec5db3c84ecd99ce8e7f922f415
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 154
+      width: 16
+      height: 16
+    spriteID: dce5dbe3d7c6a421e8f04f8addf76c4f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 6bef771ad67ae45b582fc31006d9abfc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 137
+      width: 16
+      height: 16
+    spriteID: e490e9fc5d85c4268b414f2fae7bfe0b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 4e2e38340cc9d46b0af57705c35c8d08
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_93
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 137
+      width: 16
+      height: 16
+    spriteID: cc5ee14f34638445290e352102b86eee
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 92d3f93b2e78d4db0807a0fa6719b838
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 242f3ad8a59df4a71b35ff0d0c3ed6f2
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 137
+      width: 16
+      height: 16
+    spriteID: e20ccf2924c58495da14a2f5ab3cbebb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 3319e051844bb4142a4a466fdb4d4ee9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 137
+      width: 16
+      height: 16
+    spriteID: ae50ca6aa8c784f19b7da270036579f9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 137
+      width: 16
+      height: 16
+    spriteID: a33afb551261448c28abcfddf1d396bf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_100
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 12c6fc95d7b08426b9fa3a835016e568
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_101
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 0196c1e4383f14e2383f24f1eb2867a4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_102
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 137
+      width: 16
+      height: 16
+    spriteID: a9373c0f2c1154b5d87b15cd18a48885
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_103
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 5e242d544960e49f0b7d23c9893ae2ef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_104
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 137
+      width: 16
+      height: 16
+    spriteID: 491b7db55600444e1aacaee676208108
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_105
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 955aaee62579146d99e86f9634dc3ede
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_106
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 56f3f2a80ecb44419890aa401a186abc
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_107
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 49639edd34c484a7193fbd0db7d9d06c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_108
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 7fd7e3d8abd964d5282dfd80a5bc898a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_109
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 045c3ff9e4ca0426c8acfc169a1ba2d4
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_110
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 0a5c2fea7878941239dbdaa31f1fb762
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_111
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 120
+      width: 16
+      height: 16
+    spriteID: c08946147cb3241b58174ccbfa60009c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_112
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 83c0cfdd12d6f48ab85905377b49bee6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_113
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 17314c48f8fce42109a7bccb2fd33550
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_114
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 120
+      width: 16
+      height: 16
+    spriteID: a8953d772b93f460f9920e1e8405a351
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_115
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 4be4029e7521b41208e7607f6a0f0b63
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_116
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 120
+      width: 16
+      height: 16
+    spriteID: f54e7a06b53d84c6189d28b005b39060
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_117
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 88e6f2ef35ea842a0807732bed982b9e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 82f4feea53c5d447984c3c81c093ae32
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_119
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 120
+      width: 16
+      height: 16
+    spriteID: 7631c26653e51453facf5bbd9a5bf744
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_120
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 3a107b88eea1043cea0f0a890644db1a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_121
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 103
+      width: 16
+      height: 16
+    spriteID: f9f9447379c2f4c30bd1a630b427e019
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_122
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 0dd33bc80a271498b9407763c6568a54
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_123
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 6ce7d9de917684a1caa55935936249ef
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_124
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 10bd8abc3ef6f4f6ab883062b96cdec9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_125
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 01c153b7da991461b948ea2660c31f0d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_126
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 1b1bb15fb5524477ea7d933c342e2b59
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_127
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 5c8ebace9906249278450b51e2ebfd5e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_128
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 103
+      width: 16
+      height: 16
+    spriteID: a0b1e64f619ee405789ffe51a5ed7a4c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_129
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 103
+      width: 16
+      height: 16
+    spriteID: a94d514a0ffcf47d683f78ac663a1e49
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_130
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 103
+      width: 16
+      height: 16
+    spriteID: f9953f4ab0d564439b8cb78845fbf0b0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_131
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 47b686b43d08a4d74956631a1116d944
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_132
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 0bca18670e75b4d22a04652769a7a69e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_133
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 103
+      width: 16
+      height: 16
+    spriteID: 461f01d51d1ff4f65a6022a7583b182b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_134
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 103
+      width: 16
+      height: 16
+    spriteID: e1fb556ee75834917b87429ef732b0eb
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_135
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 86
+      width: 16
+      height: 16
+    spriteID: 22610303c37884d62a9e3eaffc6c4c61
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_136
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 86
+      width: 16
+      height: 16
+    spriteID: a10012787d23346f4b653ba3740920aa
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_137
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 86
+      width: 16
+      height: 16
+    spriteID: c0701a0c2c4e04a818a750940d6664e8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_138
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 86
+      width: 16
+      height: 16
+    spriteID: 0b878c697a2d0434daacb0a286a05b87
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_139
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 86
+      width: 16
+      height: 16
+    spriteID: 9613d3bd127304970b4950e986085054
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_140
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 86
+      width: 16
+      height: 16
+    spriteID: bc5c34286f61e461bb58e0a03b5dfbe1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_141
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 86
+      width: 16
+      height: 16
+    spriteID: df097c09bea0f49e29c09b737b9f70ae
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_142
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 86
+      width: 16
+      height: 16
+    spriteID: a347c163a21a5417eafee2336f520304
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_143
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 86
+      width: 16
+      height: 16
+    spriteID: 5fdb765b24924449d933f98f18e57b06
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_144
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 86
+      width: 16
+      height: 16
+    spriteID: bf02a313e7b2c4758b7968231fd34c46
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_145
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 86
+      width: 16
+      height: 16
+    spriteID: cfdabab2d7f714b129299d92a4739d19
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_146
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 86
+      width: 16
+      height: 16
+    spriteID: 447748f9be67843b6bebcdbb9b389399
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_147
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 86
+      width: 16
+      height: 16
+    spriteID: b9fc07d695cef46bf95fb25ed242ad79
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_148
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 86
+      width: 16
+      height: 16
+    spriteID: a3a4311ee070d464db4c724c46f36b55
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_149
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 86
+      width: 16
+      height: 16
+    spriteID: 2eaaab06cbd5c4ea1aa325becc0b6e12
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_150
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 69
+      width: 16
+      height: 16
+    spriteID: e8ca1abdd86334f1a8f3e30338e31be9
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_151
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 074099159ac1e4e918c659cde17915d0
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_152
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 69
+      width: 16
+      height: 16
+    spriteID: d2280c08767d84a158a7022ae7d93e36
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_153
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 587ecac6797e84c8bbcb9ba2895477ed
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_154
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 9a8f34661c829479faab371d035c1639
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_155
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 69
+      width: 16
+      height: 16
+    spriteID: a20257375ac254a6d96b107a1f006cbf
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_156
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 5e391306c94d44c03b33964f96be7d95
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_157
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 534759e4340b149b8a29b32434dce00b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_158
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 2cdecda5347bb43099299aee0cd78016
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_159
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 62a18c8bd2d0a403dbaa1249fe6e587c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_160
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 69
+      width: 16
+      height: 16
+    spriteID: dd8e6c8068e89439aba275c3c7033c1d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_161
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 0239486b7ad164a11a31826f13aaa105
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_162
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 8015d9da3f2b840e5bb4030349b5225d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_163
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 69
+      width: 16
+      height: 16
+    spriteID: cf8d337c4679e4defa04d07ccd7f8995
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_164
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 69
+      width: 16
+      height: 16
+    spriteID: 1313249ed9124464e827071851c67a2f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_165
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 3b6318d08f4c04c079aca9514f5e3893
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_166
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 52
+      width: 16
+      height: 16
+    spriteID: c82d1d840db2b4282a8f31505a038eac
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_167
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 64e3d74910ef0423dbf93f8a3ba2bbac
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_168
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 9674c3d26c51447caa626474c5576a95
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_169
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 7ba153637dd424b30b48ac6e88e53808
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_170
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 14169b86b86304fb8ab1c0620c96c087
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_171
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 52
+      width: 16
+      height: 16
+    spriteID: d19f4fa4b9bbc4064883b2b6c7c40229
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_172
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 8011fb276b1624c6dbc588163bee6793
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_173
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 28500c00910904e11821db81b8380e6e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_174
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 2543c4727efdf498781fba9f7f1e681c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_175
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 52
+      width: 16
+      height: 16
+    spriteID: ad00dc019889b4fb5b0ec11f5607d199
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_176
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 52
+      width: 16
+      height: 16
+    spriteID: f70ce37b13e2f41d5aa4adf2cd916d1e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_177
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 813555cb2474b4266aee8e3c76d3f85d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_178
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 781cd3012305d4e5482fc74db9b79927
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_179
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 0c6d509575085431da23b0d885ac13ed
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_180
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 35
+      width: 16
+      height: 16
+    spriteID: e530493a1d4df4d0c91ec98aabd2265c
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_181
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 492ade2d86e17409b8f03ba453aa008b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_182
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 35
+      width: 16
+      height: 16
+    spriteID: e57f7f63b76f0442b8c466a2e791e041
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_183
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 66b007986568542d79c9da8da25d3bca
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_184
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 914550a8e41694aa8ae04481f2916635
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_185
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 249d866e5eac54994b20d66697b741bd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_186
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 88edb59fc37474208adff631ff0bb64d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_187
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 35
+      width: 16
+      height: 16
+    spriteID: a78ce33bd3ce04f428202e24f4e71e78
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_188
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 8aa2b035a09714a9ebb301f0ed5555ec
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_189
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 8fcd0c9042a444fe8857698f0e92e59f
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_190
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 35
+      width: 16
+      height: 16
+    spriteID: c46da56c907844ae38fea4a31fdb0b15
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_191
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 943aa1b31245b46d0a6a1b35cf3b2e9e
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_192
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 303a16403d0094b32994da862eac0211
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_193
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 35
+      width: 16
+      height: 16
+    spriteID: bebaddeb99521480b8757311d3af110d
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_194
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 35
+      width: 16
+      height: 16
+    spriteID: 1528aedde0f45475a833a5bdfaa51f96
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_195
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 18
+      width: 16
+      height: 16
+    spriteID: b1e3b10fe796340b299be76470af4011
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_196
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 18
+      width: 16
+      height: 16
+    spriteID: f1ac27d7c72034fd7a5cead322d372dd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_197
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 18
+      width: 16
+      height: 16
+    spriteID: b0776c8a79709448796429ab58ce9db1
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_198
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 18
+      width: 16
+      height: 16
+    spriteID: c18bd286d774a426da2bc4b46e38f060
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_199
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 71fcc86f2cfc14c08a41bf038f1bd146
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_200
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 8bb47b6aa82404b58b238e515ede2505
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_201
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 3af16aac0da104a20b5b7ebd2f98085a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_202
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 88362819f8a3a486f9faac7ff51288ce
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_203
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 6041810f4d8834f559f7e4b91118838b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_204
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 18
+      width: 16
+      height: 16
+    spriteID: ed95b59fb5aa34706956c7c118991a17
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_205
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 1263cef6acaae4f75a9662c46ae4b067
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_206
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 2dc8d7293f06f4d928ea32afe2d17ea8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_207
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 18
+      width: 16
+      height: 16
+    spriteID: fc35f7712a27a47158d4399cef1e799a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_208
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 5cbe1e49142fb46da9d2a0943446fe35
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_209
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 18
+      width: 16
+      height: 16
+    spriteID: 029b7593d663543dca8ae14b6c75405b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_210
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 80028aed6ae0d421daa97264b2e7acc6
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_211
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 18
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 5bb6ced87603a4cfcb325e82a7f4b3ee
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_212
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 29d55036e0fe742a6a911dcf0635932a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_213
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 52
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 6fa0b7815f95f4ca896774c4efa937d3
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_214
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 371e3902c3513411faa3f49bc9fb3953
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_215
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 6242196440e90434586067269d2519d8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_216
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 4af1e8952ef4a4fcd8739cb5333f2507
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_217
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 56e7a725e0a394d7fbc26addbb8e848b
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_218
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 1
+      width: 16
+      height: 16
+    spriteID: a8c60452536184f8789aab33bbd44a59
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_219
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 1
+      width: 16
+      height: 16
+    spriteID: fd1a0ce47dcd348ec9bb28f84ce74735
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_220
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 55168e09a57ab4fb89181cff79afdec8
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_221
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 5f418c18fcb65490db29b6c848a8c430
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_222
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 205
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 6a094f39e498a4bee8f26b2bdc84bcbd
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_223
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 1
+      width: 16
+      height: 16
+    spriteID: e4e00f71b0c3b467194e4dbe810f639a
+    spriteOutline: []
+    tessellationDetail: 0
+  - name: CustomTiles_Floor_224
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 239
+      y: 1
+      width: 16
+      height: 16
+    spriteID: 10542cd0703564ea087680376ba344f5
+    spriteOutline: []
+    tessellationDetail: 0
+  _secondaryTextures: []
+  _artifacts: {instanceID: 0}

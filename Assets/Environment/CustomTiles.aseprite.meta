@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: CustomTiles
     originalName: 
-    pivot: {x: 7.98, y: -48.9375}
+    pivot: {x: 0.69150776, y: -1.0330788}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 50
-      height: 16
+      width: 577
+      height: 393
     spriteID: 00351ec0d73f84f44ab0a23c1410f6fc
     spriteBone: []
     spriteOutline: []
@@ -152,9 +152,9 @@ ScriptedImporter:
       frameIndex: 0
       cellRect:
         x: 1
-        y: 783
-        width: 50
-        height: 16
+        y: 406
+        width: 577
+        height: 393
       spriteId: 00351ec0d73f84f44ab0a23c1410f6fc
     linkedCells: []
     parentIndex: -1

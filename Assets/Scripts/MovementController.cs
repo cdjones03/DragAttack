@@ -11,12 +11,11 @@ public class MovementController : MonoBehaviour
     public float groundCheckRadius = 0.2f; // Radius of the ground check
     public LayerMask groundMask; // Mask to specify what is considered ground
 
-    private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private float moveHorizontal; // Variable to store the horizontal move input
     private float moveVertical; // Variable to store the vertical move input
     private SpriteRenderer spriteRenderer;
 
-    public AnimationController animationController;
+    public Animator anim;
     private bool isGrounded; // To check if the player is on the ground
 
     [SerializeField]
@@ -24,49 +23,34 @@ public class MovementController : MonoBehaviour
     [SerializeField]
     private float MAX_Y = 3.75f;
 
+    private Rigidbody2D rb;
+    private Vector2 moveInput;
+
+    [HideInInspector] public bool isFacingRight;
+
+    public bool isGownForm;
+
     void Start()
     {
         // Get and store a reference to the Rigidbody2D component so that we can access it.
         rb = GetComponent<Rigidbody2D>();
+        isFacingRight = true;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        animationController = GetComponent<AnimationController>();
+        anim = GetComponent<Animator>();
+
+        isGownForm = true;
+        anim.SetBool("isGownForm", isGownForm);
     }
 
     void Update()
     {
-        // Get the horizontal input (A, D, Left Arrow, Right Arrow for horizontal)
-        moveHorizontal = Input.GetAxis("Horizontal");
-        moveVertical = Input.GetAxis("Vertical");
-
-        // Check if the player is on the ground using Physics2D to detect collision with ground layers
-        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundMask);
         isGrounded = true;
-        // Flip the sprite based on movement direction
-        if (moveHorizontal > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-        else if (moveHorizontal < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
 
-        // Handle jumping when the player presses the jump button (space bar)
-        if (Input.GetKeyDown(KeyCode.J) && isGrounded)
-        {
-            Jump();
-        }
+        Move();
     }
 
     void FixedUpdate()
     {
-        // Create movement vector
-        float moveSpeed = animationController.IsForm1() ? moveSpeedForm1 : moveSpeedForm2;
-        Vector2 movement = new Vector2(moveHorizontal * moveSpeed, moveVertical * moveSpeed);
-
-        // Apply the movement
-        rb.velocity = movement;
-
         // Clamp both X and Y positions
         Vector3 clampedPosition = transform.position;
         clampedPosition.x = Mathf.Max(-45f, clampedPosition.x);  // Clamp minimum X to -45
@@ -74,17 +58,57 @@ public class MovementController : MonoBehaviour
         transform.position = clampedPosition;
     }
 
-    // Function to handle jumping
-    void Jump()
-    {
-        // Apply an upward force to the Rigidbody2D for jumping
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-    }
-
     // Debugging tool: Visualize the ground check radius in the Scene view
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+
+    private void Move()
+    {
+        moveInput = UserInput.instance.moveInput;
+        if(moveInput.x < 0 || moveInput.x > 0 || moveInput.y < 0 || moveInput.y > 0)
+        {
+            TurnCheck();
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
+
+        float moveSpeed = isGownForm ? moveSpeedForm1 : moveSpeedForm2;
+        rb.velocity = new Vector2(moveInput.x * moveSpeed, moveInput.y * moveSpeed);
+    }
+
+    private void StartDirectionCheck()
+    {
+        if(moveInput.x > 0)
+        {
+            isFacingRight = true;
+        }
+        else if(moveInput.x < 0)
+        {
+            isFacingRight = false;
+        }
+    }
+
+    private void TurnCheck()
+    {
+        if(UserInput.instance.moveInput.x > 0 && !isFacingRight)
+        {
+            Turn();
+        }
+        else if(UserInput.instance.moveInput.x < 0 && isFacingRight)
+        {
+            Turn();
+        }
+    }
+
+    private void Turn()
+    {
+        transform.Rotate(0f, 180f, 0f);
+        isFacingRight = !isFacingRight;
     }
 }

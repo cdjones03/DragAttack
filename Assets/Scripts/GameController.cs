@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SpawnEnemyRoutine());
+        //StartCoroutine(SpawnEnemyRoutine());
         
     }
 
