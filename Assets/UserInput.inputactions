@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "cebb7a59-6633-4f1e-9436-1e4a5b67c233",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -235,6 +244,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2efc778e-5eef-4f11-8f04-8d9e37bed0a0",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -244,7 +264,7 @@
             "actions": [
                 {
                     "name": "Punch",
-                    "type": "PassThrough",
+                    "type": "Button",
                     "id": "911370df-3128-4bcf-8ab2-9be28fe52cca",
                     "expectedControlType": "Button",
                     "processors": "",

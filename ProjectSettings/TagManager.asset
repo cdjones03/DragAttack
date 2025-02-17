@@ -16,7 +16,7 @@ TagManager:
   - Ground
   - Characters
   - Attackable
-  - 
+  - Base
   - 
   - 
   - 
@@ -40,11 +40,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
   - name: Background
     uniqueID: 151007631
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Level
+    uniqueID: 437691311
     locked: 0
   - name: Characters
     uniqueID: 3640697319

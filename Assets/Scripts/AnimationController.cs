@@ -61,7 +61,7 @@ public class AnimationController : MonoBehaviour
         // Switch forms when the spacebar is pressed
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentAnimator = currentAnimator == gownAnimator ? suitAnimator : gownAnimator;
+            
             isGownForm = !isGownForm; // Toggle form
 
             // Debug log to show form change

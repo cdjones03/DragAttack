@@ -4,111 +4,187 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour
 {
-    public float moveSpeedForm1 = 5f; // Movement speed of the character
-    public float moveSpeedForm2 = 8f; // Movement speed of the character
-    public float jumpForce = 10f; // Force applied when the character jumps
-    public Transform groundCheck; // A point at the bottom of the character to check if grounded
-    public float groundCheckRadius = 0.2f; // Radius of the ground check
-    public LayerMask groundMask; // Mask to specify what is considered ground
+    [SerializeField] private bool canMove = true;
+    [Tooltip(("If your character does not jump, ignore all below 'Jumping' Character"))]
+    [SerializeField] private bool doesCharacterJump = false;
 
-    private float moveHorizontal; // Variable to store the horizontal move input
-    private float moveVertical; // Variable to store the vertical move input
-    private SpriteRenderer spriteRenderer;
+    [Header("Base / Root")]
+    [SerializeField] private Rigidbody2D baseRB;
+    [SerializeField] private float hSpeed = 10f;
+    [SerializeField] private float vSpeed = 6f;
+    [Range(0, 1.0f)]
+    [SerializeField] float movementSmooth = 0.5f;
 
-    public Animator anim;
-    private bool isGrounded; // To check if the player is on the ground
+    [Header("'Jumping' Character")]
+    [SerializeField] private Rigidbody2D charRB;
+    [SerializeField] private float jumpVal = 10f;
+    [SerializeField] private int possibleJumps = 1;
+    [SerializeField] private int currentJumps = 0;
+    [SerializeField] private bool onBase = false;
+    [SerializeField] private Transform jumpDetector;
+    [SerializeField] private float detectionDistance;
+    [SerializeField] private LayerMask detectLayer;
+    [SerializeField] private float jumpingGravityScale;
+    [SerializeField] private float fallingGravityScale;
+    private bool jump;
 
-    [SerializeField]
-    private float MIN_Y = -3f;
-    [SerializeField]
-    private float MAX_Y = 3.75f;
+    private bool facingRight = true;
+    private Vector3 velocity = Vector3.zero;
 
-    private Rigidbody2D rb;
     private Vector2 moveInput;
 
-    [HideInInspector] public bool isFacingRight;
+    private float gownMoveSpeed = 5f;
+    private float suitMoveSpeed = 8f;
 
-    public bool isGownForm;
+    private float moveSpeed;
 
-    void Start()
+    private bool isGownForm = true;
+    
+    // 
+    private Vector3 charDefaultRelPos, baseDefPos; 
+
+    // Start is called before the first frame update
+    private void Awake()
     {
-        // Get and store a reference to the Rigidbody2D component so that we can access it.
-        rb = GetComponent<Rigidbody2D>();
-        isFacingRight = true;
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        anim = GetComponent<Animator>();
 
-        isGownForm = true;
-        anim.SetBool("isGownForm", isGownForm);
     }
 
-    void Update()
+    private void Start()
     {
-        isGrounded = true;
+        charDefaultRelPos = charRB.transform.localPosition;
+    }
+    
+    private void Update()
+    {
+        moveInput = UserInput.instance.moveInput;
+        jump = UserInput.instance.jumpInput;
+        /*
+        if (controls.JumpState && currentJumps < possibleJumps)
+        {
+            jump = true;
+        }
+        */
+    }
 
+    private void FixedUpdate()
+    {
         Move();
     }
-
-    void FixedUpdate()
-    {
-        // Clamp both X and Y positions
-        Vector3 clampedPosition = transform.position;
-        clampedPosition.x = Mathf.Max(-45f, clampedPosition.x);  // Clamp minimum X to -45
-        clampedPosition.y = Mathf.Clamp(clampedPosition.y, MIN_Y, MAX_Y);
-        transform.position = clampedPosition;
-    }
-
-    // Debugging tool: Visualize the ground check radius in the Scene view
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
-    }
-
+    
     private void Move()
     {
         moveInput = UserInput.instance.moveInput;
-        if(moveInput.x < 0 || moveInput.x > 0 || moveInput.y < 0 || moveInput.y > 0)
+        moveSpeed = isGownForm ? gownMoveSpeed : suitMoveSpeed;
+
+        if (!onBase && doesCharacterJump && charRB.velocity.y < 0)
         {
-            TurnCheck();
-            anim.SetBool("isWalking", true);
-        }
-        else
-        {
-            anim.SetBool("isWalking", false);
+            detectBase();
         }
 
-        float moveSpeed = isGownForm ? moveSpeedForm1 : moveSpeedForm2;
-        rb.velocity = new Vector2(moveInput.x * moveSpeed, moveInput.y * moveSpeed);
+        if (canMove)
+        {
+            Vector3 targetVelocity = new Vector2(moveInput.x * moveSpeed, moveInput.y * moveSpeed);
+
+            Vector2 _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
+            baseRB.velocity = _velocity;
+
+            
+            //----- 
+            if (doesCharacterJump)
+            {
+                
+                if (onBase)
+                {
+                    
+                    // charRB.velocity = baseRB.velocity;
+                    charRB.velocity = Vector2.zero;
+                    
+                    // vertical check
+                    if (charRB.transform.localPosition != charDefaultRelPos)
+                    {
+                        var charTransform = charRB.transform;
+                        charTransform.localPosition = new Vector2(charTransform.localPosition.x,
+                            charDefaultRelPos.y);
+                    }
+                }
+
+
+                else
+                {
+                    // falling
+                    // if (charRB.velocity.y < 0)
+                    // {
+                    //     // charRB.gravityScale = fallingGravityScale;
+                    // }
+                    // else
+                    // { // moving upward from jump
+                    //     // charRB.gravityScale = jumpingGravityScale;
+                    // }
+                
+                    charRB.velocity = new Vector2(_velocity.x, charRB.velocity.y);
+                }
+
+                if (jump)
+                {
+                    charRB.isKinematic = false;
+                    charRB.AddForce(Vector2.up * jumpVal, ForceMode2D.Impulse);
+                    charRB.gravityScale = jumpingGravityScale;
+                    jump = false;
+                    currentJumps++;
+                    onBase = false;
+                }
+                
+                
+                // --- horizontal position check
+                if (charRB.transform.localPosition != charDefaultRelPos)
+                {
+                    print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
+                    var charTransform = charRB.transform;
+                    charTransform.localPosition = new Vector2(charDefaultRelPos.x,
+                        charTransform.localPosition.y);
+                }
+                
+            }
+            // --- 
+
+            
+
+            // rotate if we're facing the wrong way
+            if (moveInput.x > 0 && !facingRight)
+            {
+                flip();
+            } else if(moveInput.x < 0 && facingRight)
+            {
+                flip();
+            }
+        }
     }
 
-    private void StartDirectionCheck()
+    private void flip()
     {
-        if(moveInput.x > 0)
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
+    }
+
+    private void detectBase()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(jumpDetector.position, -Vector2.up, detectionDistance, detectLayer);
+        if(hit.collider != null)
         {
-            isFacingRight = true;
-        }
-        else if(moveInput.x < 0)
-        {
-            isFacingRight = false;
+            onBase = true;
+            charRB.isKinematic = true;
+            currentJumps = 0;
+            // charRB.velocity = Vector2.zero;
+            // baseRB.velocity = Vector2.zero;
+            Debug.Log("setting velocity to zero");
         }
     }
 
-    private void TurnCheck()
+    private void OnDrawGizmos()
     {
-        if(UserInput.instance.moveInput.x > 0 && !isFacingRight)
+        if (doesCharacterJump)
         {
-            Turn();
+            Gizmos.DrawRay(jumpDetector.transform.position, -Vector3.up * detectionDistance);
         }
-        else if(UserInput.instance.moveInput.x < 0 && isFacingRight)
-        {
-            Turn();
-        }
-    }
-
-    private void Turn()
-    {
-        transform.Rotate(0f, 180f, 0f);
-        isFacingRight = !isFacingRight;
-    }
+    }   
 }
