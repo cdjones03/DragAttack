@@ -39,6 +39,8 @@ public class MovementController : MonoBehaviour
     private float moveSpeed;
 
     private bool isGownForm = true;
+
+    private Animator animator;
     
     // 
     private Vector3 charDefaultRelPos, baseDefPos; 
@@ -52,6 +54,7 @@ public class MovementController : MonoBehaviour
     private void Start()
     {
         charDefaultRelPos = charRB.transform.localPosition;
+        animator = GetComponentInChildren<Animator>();
     }
     
     private void Update()
@@ -75,6 +78,12 @@ public class MovementController : MonoBehaviour
     {
         moveInput = UserInput.instance.moveInput;
         moveSpeed = isGownForm ? gownMoveSpeed : suitMoveSpeed;
+
+        if(moveInput.x != 0 || moveInput.y != 0){
+            animator.SetBool("isWalking", true);
+        } else {
+            animator.SetBool("isWalking", false);
+        }
 
         if (!onBase && doesCharacterJump && charRB.velocity.y < 0)
         {

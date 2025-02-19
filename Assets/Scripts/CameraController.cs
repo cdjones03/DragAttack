@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
 
     public float offsetY = 0f; // The Y position to lock the camera to
 
-    public float minX = -33f; // Minimum X boundary
+    public float minX = -100f; // Minimum X boundary
     public float maxX = 110f;  // Maximum X boundary
 
     private void Start()
@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour
         
         // Clamp between -22 and player's position
         float clampedX = Mathf.Min(playerX, maxX);  // First, clamp to max
-        clampedX = Mathf.Max(-16f, clampedX);       // Then, clamp to -22
+        clampedX = Mathf.Max(minX, clampedX);       // Then, clamp to -22
         
         Vector3 desiredPosition = new Vector3(clampedX, offsetY, transform.position.z);
 

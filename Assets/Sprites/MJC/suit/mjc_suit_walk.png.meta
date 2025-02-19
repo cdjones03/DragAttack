@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7dae7b6e2ff2f4a2da56a3681c3c5fb1
+guid: 1e67738a929e846958837cc8bc0c52e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,10 +136,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mjc_suit_kick_0
+      name: mjc_suit_walk_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 1
         width: 9
         height: 31
@@ -150,40 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f00e6916132f84d8bbd645a51c67f9ca
-      internalID: 1436216828
+      spriteID: 8b1da9cdb0ae149a7bf0e9a767302b0c
+      internalID: 173084790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mjc_suit_kick_1
+      name: mjc_suit_walk_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 16
         y: 1
-        width: 11
-        height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2830deb7642a94376b329802c2fc00da
-      internalID: 899601918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mjc_suit_kick_2
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 1
-        width: 21
+        width: 10
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -192,8 +171,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96ea1d67819074d079e4ffa19fcf800b
-      internalID: 1266719647
+      spriteID: 5f452f219ba2746228fa10bc2961ed2f
+      internalID: -1462816080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mjc_suit_walk_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1
+        width: 9
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78db7842aeb09463e90b4faa8f3d326a
+      internalID: 168440063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mjc_suit_walk_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1
+        width: 13
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ca09b66eb4a48c3b5dc80cd7355058
+      internalID: 1676665371
       vertices: []
       indices: 
       edges: []
@@ -209,9 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mjc_suit_kick_0: 1436216828
-      mjc_suit_kick_1: 899601918
-      mjc_suit_kick_2: 1266719647
+      mjc_suit_walk_0: 173084790
+      mjc_suit_walk_1: -1462816080
+      mjc_suit_walk_2: 168440063
+      mjc_suit_walk_3: 1676665371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

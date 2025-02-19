@@ -327,6 +327,65 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Misc",
+            "id": "8cd2d65b-5722-4dea-a989-02bcf39a0b33",
+            "actions": [
+                {
+                    "name": "SwitchForm",
+                    "type": "Button",
+                    "id": "36f3359e-9e92-40de-a83e-371ce5d465cc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Throw",
+                    "type": "Button",
+                    "id": "d06b7087-d563-47aa-bcc3-500e7151c999",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "28aa6e0c-e657-442a-9f92-18efee7273bc",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "SwitchForm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72d70446-450e-4f25-b83e-980d1e3e001b",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "SwitchForm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "19a42f1b-b80c-4480-ab39-ab197b52f4ef",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

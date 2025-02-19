@@ -9,9 +9,7 @@ public class AnimationController : MonoBehaviour
     public int currentHealth;
     public int maxHealth = 100;
 
-    public Animator currentAnimator;
-    public Animator gownAnimator;
-    public Animator suitAnimator;
+    public Animator anim;
     private bool isGownForm = true; // Tracks current form
     public float attackCooldown = 0.2f; // Attack cooldown
     private bool canAttack = true;
@@ -35,7 +33,7 @@ public class AnimationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentAnimator = gownAnimator;
+        anim = GetComponent<Animator>();
         // Ensure animator1 is active at start
         DisableAllHitboxes();
         currentHealth = maxHealth;

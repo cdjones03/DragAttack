@@ -349,6 +349,65 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Misc"",
+            ""id"": ""8cd2d65b-5722-4dea-a989-02bcf39a0b33"",
+            ""actions"": [
+                {
+                    ""name"": ""SwitchForm"",
+                    ""type"": ""Button"",
+                    ""id"": ""36f3359e-9e92-40de-a83e-371ce5d465cc"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Throw"",
+                    ""type"": ""Button"",
+                    ""id"": ""d06b7087-d563-47aa-bcc3-500e7151c999"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""28aa6e0c-e657-442a-9f92-18efee7273bc"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""SwitchForm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""72d70446-450e-4f25-b83e-980d1e3e001b"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""SwitchForm"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""19a42f1b-b80c-4480-ab39-ab197b52f4ef"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Throw"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -372,6 +431,10 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Attack = asset.FindActionMap("Attack", throwIfNotFound: true);
         m_Attack_Punch = m_Attack.FindAction("Punch", throwIfNotFound: true);
         m_Attack_Kick = m_Attack.FindAction("Kick", throwIfNotFound: true);
+        // Misc
+        m_Misc = asset.FindActionMap("Misc", throwIfNotFound: true);
+        m_Misc_SwitchForm = m_Misc.FindAction("SwitchForm", throwIfNotFound: true);
+        m_Misc_Throw = m_Misc.FindAction("Throw", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -537,6 +600,60 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         }
     }
     public AttackActions @Attack => new AttackActions(this);
+
+    // Misc
+    private readonly InputActionMap m_Misc;
+    private List<IMiscActions> m_MiscActionsCallbackInterfaces = new List<IMiscActions>();
+    private readonly InputAction m_Misc_SwitchForm;
+    private readonly InputAction m_Misc_Throw;
+    public struct MiscActions
+    {
+        private @Controls m_Wrapper;
+        public MiscActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @SwitchForm => m_Wrapper.m_Misc_SwitchForm;
+        public InputAction @Throw => m_Wrapper.m_Misc_Throw;
+        public InputActionMap Get() { return m_Wrapper.m_Misc; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(MiscActions set) { return set.Get(); }
+        public void AddCallbacks(IMiscActions instance)
+        {
+            if (instance == null || m_Wrapper.m_MiscActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_MiscActionsCallbackInterfaces.Add(instance);
+            @SwitchForm.started += instance.OnSwitchForm;
+            @SwitchForm.performed += instance.OnSwitchForm;
+            @SwitchForm.canceled += instance.OnSwitchForm;
+            @Throw.started += instance.OnThrow;
+            @Throw.performed += instance.OnThrow;
+            @Throw.canceled += instance.OnThrow;
+        }
+
+        private void UnregisterCallbacks(IMiscActions instance)
+        {
+            @SwitchForm.started -= instance.OnSwitchForm;
+            @SwitchForm.performed -= instance.OnSwitchForm;
+            @SwitchForm.canceled -= instance.OnSwitchForm;
+            @Throw.started -= instance.OnThrow;
+            @Throw.performed -= instance.OnThrow;
+            @Throw.canceled -= instance.OnThrow;
+        }
+
+        public void RemoveCallbacks(IMiscActions instance)
+        {
+            if (m_Wrapper.m_MiscActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IMiscActions instance)
+        {
+            foreach (var item in m_Wrapper.m_MiscActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_MiscActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public MiscActions @Misc => new MiscActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -564,5 +681,10 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     {
         void OnPunch(InputAction.CallbackContext context);
         void OnKick(InputAction.CallbackContext context);
+    }
+    public interface IMiscActions
+    {
+        void OnSwitchForm(InputAction.CallbackContext context);
+        void OnThrow(InputAction.CallbackContext context);
     }
 }

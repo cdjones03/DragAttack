@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638750669980863470
+  platformSettingsDirtyTick: 638754121306953050
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -140,10 +140,10 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: MJC-SuitForm_0
+  - name: mjc_suit_idle_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -151,7 +151,7 @@ ScriptedImporter:
       y: 36
       width: 9
       height: 31
-    spriteID: ecb39cbc0b72a423a9642be1e7997e5b
+    spriteID: d9c2a489da29a4d1995a8ad45be98888
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,10 +160,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: MJC-SuitForm_1
+  - name: mjc_suit_idle_1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -171,7 +171,7 @@ ScriptedImporter:
       y: 36
       width: 9
       height: 31
-    spriteID: b4a6fc28997a34e888ee90418bebc942
+    spriteID: 9ce5b1c80daf94614973802b406a3caa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,10 +180,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: MJC-SuitForm_2
+  - name: mjc_suit_idle_2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -191,7 +191,7 @@ ScriptedImporter:
       y: 36
       width: 9
       height: 31
-    spriteID: 5dbf1e522e4544ef296290642b453f1a
+    spriteID: 565281d096a0d479db1705449b974b49
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,10 +200,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: MJC-SuitForm_3
+  - name: mjc_suit_idle_3
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -211,7 +211,7 @@ ScriptedImporter:
       y: 36
       width: 9
       height: 31
-    spriteID: b2623dd16d25246a49d33647889b99de
+    spriteID: 02354e955e2f640f3a50306480108ad8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,10 +220,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: MJC-SuitForm_4
+  - name: mjc_suit_idle_4
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -231,7 +231,7 @@ ScriptedImporter:
       y: 4
       width: 9
       height: 31
-    spriteID: 1770bc2f5a7d94fb2a22d91aa88ab6db
+    spriteID: 3ea53b76e3d63401885d9d761920a151
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,10 +240,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: MJC-SuitForm_5
+  - name: mjc_suit_idle_5
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -251,7 +251,7 @@ ScriptedImporter:
       y: 4
       width: 9
       height: 31
-    spriteID: df7f9d9d3436643cd88aa52d29a0d9fe
+    spriteID: b3622911381574b579c0368237592931
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,10 +260,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: MJC-SuitForm_6
+  - name: mjc_suit_idle_6
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -271,7 +271,7 @@ ScriptedImporter:
       y: 4
       width: 9
       height: 31
-    spriteID: cd53254970a044acea2a47cea4b9ae68
+    spriteID: da7500ac438ba47b2b9c087bf5d34315
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,10 +280,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: MJC-SuitForm_7
+  - name: mjc_suit_idle_7
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -291,7 +291,7 @@ ScriptedImporter:
       y: 4
       width: 9
       height: 31
-    spriteID: 6b1f55cbb7f4e4b198e265273bd37264
+    spriteID: 200257d8f7da349bfb978da3a92062ce
     spriteBone: []
     spriteOutline: []
     vertices: []
