@@ -4,63 +4,69 @@ using UnityEngine;
 
 public class SpeechAttack : MonoBehaviour
 {
+[Header("Projectile Settings")]
+    [SerializeField] private float speed = 10f;
+    [SerializeField] private float damage = 10f;
+    [SerializeField] private float lifetime = 3f;
+    [SerializeField] private bool followTarget = true;
 
-    private int damage = 5; // Damage dealt by the punch
-    public GameObject player;
-    public float speed = 5f;
-    public float destroyDelay = 0.5f;
-
-    private Transform playerTransform;
-    private bool hasCollided = false;
-
-    public float attackDuration = 3f;
+    [Header("References")]
+    [SerializeField] private Rigidbody2D rb;
     
+    private Transform target;
+    private bool hasHit = false;
+
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            playerTransform = player.transform;
-        }
-        else
-        {
-            Debug.LogWarning("Player not found. Make sure the player object has the 'Player' tag.");
-        }
-
-        Destroy(gameObject, attackDuration);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // Check if the collided object is an enemy
-        if (other.CompareTag("Player") && !hasCollided)
-        {
-            // Call the enemy's TakeDamage function (if it has one)
-            AnimationController player = other.GetComponent<AnimationController>();
-            if (player != null)
-            {
-                speed = 0;
-                player.TakeDamage(damage);
-                StartCoroutine(DestroyAfterDelay());
-            }
-        }
+        // Get rigidbody if not set
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        
+        // Destroy after lifetime
+        Destroy(gameObject, lifetime);
     }
 
     private void Update()
     {
-        if (playerTransform != null)
-        {
-            // Calculate direction towards the player
-            Vector3 direction = (playerTransform.position - transform.position).normalized;
+        if (hasHit) return;
 
-            // Move towards the player
-            transform.position += direction * speed * Time.deltaTime;
+        if (followTarget && target != null)
+        {
+            // Calculate direction to target
+            Vector2 direction = (target.position - transform.position).normalized;
+            rb.velocity = direction * speed;
+
+            // Optional: Rotate projectile to face direction
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
     }
 
-     private IEnumerator DestroyAfterDelay()
+    public void Initialize(Transform target)
     {
-        yield return new WaitForSeconds(destroyDelay);
-        Destroy(gameObject);
+        this.target = target;
+        
+        if (!followTarget)
+        {
+            // If not following target, just set initial direction
+            Vector2 direction = (target.position - transform.position).normalized;
+            rb.velocity = direction * speed;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (hasHit) return;
+
+        // Check if we hit something damageable
+        if (other.TryGetComponent<IDamageable>(out var damageable))
+        {
+            damageable.Damage(damage);
+            hasHit = true;
+            
+            // Optional: Play hit effect
+            // Instantiate(hitEffect, transform.position, Quaternion.identity);
+            
+            Destroy(gameObject);
+        }
     }
 }

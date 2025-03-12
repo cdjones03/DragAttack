@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1458441452966632065}
   - component: {fileID: 6778637730445316130}
   - component: {fileID: 2573603764260972761}
+  - component: {fileID: 4741587323252481082}
+  - component: {fileID: 8465678753268603617}
   m_Layer: 0
   m_Name: WBC_SpeechAttack
   m_TagString: Untagged
@@ -27,13 +29,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239371183741053010}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -231,7 +233,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 832cc9e71ccaa4bf087c995988085c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  player: {fileID: 0}
   speed: 5
-  destroyDelay: 0.5
+  damage: 10
+  lifetime: 3
+  followTarget: 1
+  rb: {fileID: 0}
+--- !u!33 &4741587323252481082
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239371183741053010}
+  m_Mesh: {fileID: 0}
+--- !u!210 &8465678753268603617
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239371183741053010}
+  m_Enabled: 1
+  m_SortingLayerID: 437691311
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_SortAtRoot: 0

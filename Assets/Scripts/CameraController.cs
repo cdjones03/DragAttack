@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
     public float smoothSpeed = 0.125f; // How smoothly the camera catches up with the player's movement
     public Vector3 offset; // The offset from the player position
 
-    public float offsetY = 0f; // The Y position to lock the camera to
+    public float offsetY = 2f; // The Y position to lock the camera to
 
     public float minX = -100f; // Minimum X boundary
     public float maxX = 110f;  // Maximum X boundary
@@ -22,14 +22,17 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
+        if (playerTransform == null) return;
+
         // Get the player's X position
         float playerX = playerTransform.position.x;
         
-        // Clamp between -22 and player's position
+        // Clamp between boundaries
         float clampedX = Mathf.Min(playerX, maxX);  // First, clamp to max
-        clampedX = Mathf.Max(minX, clampedX);       // Then, clamp to -22
+        clampedX = Mathf.Max(minX, clampedX);       // Then, clamp to min
         
-        Vector3 desiredPosition = new Vector3(clampedX, offsetY, transform.position.z);
+        // Calculate desired position with offset
+        Vector3 desiredPosition = new Vector3(clampedX + offset.x, offsetY, -10);
 
         // Smoothly interpolate towards the desired position
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
@@ -55,23 +58,17 @@ public class CameraController : MonoBehaviour
         // Reload the current scene
         SceneManager.LoadScene(currentSceneIndex);
     }
-
-    void FixedUpdate()
+    
+        public void SetBoundaries(float min, float max)
     {
-        /**
-        playerTransform = player.transform;
-
-        if (playerTransform != null)
-        {
-            // Get the player's position with offset
-            Vector3 targetPosition = new Vector3(playerTransform.position.x + offset.x, transform.position.y, -10);
-
-            // Smoothly move the camera towards the player's position on the X axis
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, targetPosition, smoothSpeed);
-            transform.position = smoothedPosition;
-        }
-        **/
+        minX = min;
+        maxX = max;
     }
 
-    
+    public void ResetBoundaries()
+    {
+        // Reset to your default values
+        minX = -float.MaxValue;
+        maxX = float.MaxValue;
+    }
 }

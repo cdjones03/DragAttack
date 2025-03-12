@@ -3,41 +3,43 @@ using UnityEngine.UI;
 
 public class HPBar : MonoBehaviour
 {
-    public int maxHP = 10;
-    public int currentHP;
+    public float maxHP;
+    public float currentHP;
     public Image[] heartIcons;
+    public PlayerHealth playerHealth;
 
     private void Start()
     {
-        currentHP = maxHP;
-        UpdateHPBar();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.H))
+        if (playerHealth != null)
         {
-            TakeDamage(1);
+            // Subscribe to player health events
+            playerHealth.OnPlayerDamaged += UpdateHPBar;
+            playerHealth.OnPlayerHealed += UpdateHPBar;
+            
+            // Initialize health display
+            maxHP = playerHealth.getMaxHealth();
+            currentHP = playerHealth.getCurrentHealth();
+            UpdateHPBar(currentHP);
         }
     }
 
-    public void TakeDamage(int damage)
+    private void OnDestroy()
     {
-        currentHP = Mathf.Max(0, currentHP - damage);
-        UpdateHPBar();
+        // Unsubscribe when destroyed to prevent memory leaks
+        if (playerHealth != null)
+        {
+            playerHealth.OnPlayerDamaged -= UpdateHPBar;
+            playerHealth.OnPlayerHealed -= UpdateHPBar;
+        }
     }
 
-    public void Heal(int amount)
+    private void UpdateHPBar(float newHP)
     {
-        currentHP = Mathf.Min(maxHP, currentHP + amount);
-        UpdateHPBar();
-    }
-
-    private void UpdateHPBar()
-    {
+        currentHP = (int)newHP;
+        
         for (int i = 0; i < heartIcons.Length; i++)
         {
-            if (i < currentHP)
+            if (i * 10 < currentHP)
             {
                 heartIcons[i].enabled = true;
             }

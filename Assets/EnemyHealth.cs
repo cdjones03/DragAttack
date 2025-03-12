@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour, IDamageable
 {
-    [SerializeField] private float maxHealth = 100;
+    [SerializeField] private float maxHealth = 30;
     private float currentHealth;
+
+    public event System.Action OnEnemyDeath;
+    public event System.Action<float> OnEnemyDamaged;
+    public event System.Action<float> OnEnemyHealed;
 
     // Start is called before the first frame update
     void Start()
@@ -21,16 +25,34 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     public void Damage(float damageAmount)
     {
+        if(currentHealth <= 0)
+        {
+            return;
+        }
+
         currentHealth -= damageAmount;
+        OnEnemyDamaged?.Invoke(damageAmount);
+
+        Debug.Log("Enemy took damage: " + damageAmount);
+        Debug.Log("Enemy current health: " + currentHealth);
+
         if(currentHealth <= 0)
         {
             Die();
         }
     }
 
-    private void Die()
+    public void Die()
     {
         Debug.Log("Enemy died");
+        OnEnemyDeath?.Invoke();
+        Destroy(gameObject);
+    }
+
+    public void Heal(float healAmount)
+    {
+        currentHealth += healAmount;
+        OnEnemyHealed?.Invoke(healAmount);
     }
         
 }

@@ -27,6 +27,16 @@ public class HandleAnimBooleans : StateMachineBehaviour
             if(boolHolders[i].resetOnExit)
             {
                 animator.SetBool(boolHolders[i].boolName, !boolHolders[i].status);
+                
+                // If this is a punch animation ending, reset the attack state
+                if(boolHolders[i].boolName == "isPunching" || boolHolders[i].boolName == "isKicking")
+                {
+                    var combatTester = animator.GetComponentInParent<CombatTester>();
+                    if(combatTester != null)
+                    {
+                        combatTester.canAttack = true;
+                    }
+                }
             } 
         }
     }

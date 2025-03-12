@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 967ce5639b70a417a99bb2e15bcb0df2
+guid: f7b5f95632d7d4444baf58e0adf4ef93
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,8 +71,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mjc_gown_idle_0
+      name: WhiteWoman_Walk_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 15
-        height: 32
+        width: 12
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,19 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d35e67ddf6d854089a115db73a9d4e40
-      internalID: -1820921144
+      spriteID: cdd9bb2e3f5394770ac27435cb5daef6
+      internalID: -6290453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mjc_gown_idle_1
+      name: WhiteWoman_Walk_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 37
         y: 0
-        width: 15
+        width: 11
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb122de13f6de4547a02a8d59e339802
-      internalID: 359627031
+      spriteID: 7212a632bcd684e128451286a3f6604f
+      internalID: -1275006992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mjc_gown_idle_2
+      name: WhiteWoman_Walk_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 68
         y: 0
-        width: 15
-        height: 32
+        width: 12
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,19 +192,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02a5d5d35e1d4ea7a08b05ce8c268c9
-      internalID: -1037186943
+      spriteID: e8fbaa6fd37c3480085d2a2f6070294d
+      internalID: 1751703237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mjc_gown_idle_3
+      name: WhiteWoman_Walk_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 99
         y: 0
-        width: 15
+        width: 17
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -213,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52eef6e8a124546d58229eb0e46d8b9a
-      internalID: 529599676
+      spriteID: d120d9f136621462e913e46eb90270a7
+      internalID: 560777287
       vertices: []
       indices: 
       edges: []
@@ -230,10 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      mjc_gown_idle_0: -1820921144
-      mjc_gown_idle_1: 359627031
-      mjc_gown_idle_2: -1037186943
-      mjc_gown_idle_3: 529599676
+      WhiteWoman_Walk_0: -6290453
+      WhiteWoman_Walk_1: -1275006992
+      WhiteWoman_Walk_2: 1751703237
+      WhiteWoman_Walk_3: 560777287
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -97,6 +97,8 @@ public class MovementController : MonoBehaviour
             Vector2 _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
             baseRB.velocity = _velocity;
 
+
+
             
             //----- 
             if (doesCharacterJump)
@@ -147,7 +149,7 @@ public class MovementController : MonoBehaviour
                 // --- horizontal position check
                 if (charRB.transform.localPosition != charDefaultRelPos)
                 {
-                    print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
+                    //print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
                     var charTransform = charRB.transform;
                     charTransform.localPosition = new Vector2(charDefaultRelPos.x,
                         charTransform.localPosition.y);
