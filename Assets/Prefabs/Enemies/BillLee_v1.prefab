@@ -36,7 +36,7 @@ Transform:
   - {fileID: 8449907118454748652}
   - {fileID: 2144384704520086749}
   m_Father: {fileID: 0}
-  m_RootOrder: -2
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &1584772859135949197
 SortingGroup:
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381b7f4b37b574e469d2f0744dc386d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 100
 --- !u!95 &5532050322473829205
 Animator:
   serializedVersion: 5
@@ -144,7 +144,7 @@ MonoBehaviour:
   beamSpawnDelay: 1
   beamXOffset: 2
   beamDamage: 20
-  beamLifetime: 1
+  beamLifetime: 1.5
 --- !u!1 &3387688188830597351
 GameObject:
   m_ObjectHideFlags: 0

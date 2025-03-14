@@ -457,8 +457,9 @@ MonoBehaviour:
     drag artist Molly Jolly Christmas as she takes on Billy the Bigot and his evil
     plan to ban drag.  \n\nWith the current political climate, it's more important
     than ever to support queer art. Donate to the ACLU Drag Defense Fund at the QR
-    code below:\n\nControls:\n\nArrow Keys: Move\nSpace Bar: Switch Forms\nZ: Light
-    Attack\nX: Heavy Attack\nF: Throw Drink when Held\nM: Reset Level"
+    code below:\n\nKeyboard Controls:\n\nMove: Arrow Keys, WASD\nSwitch Forms: Space
+    Bar\nPunch: Z\nKick: X\nM: Reset Level\n\nGamepad Controls:\n\nMove: Left Joystick\nSwitch
+    Forms: Triangle/Y Button\nPunch: Square/X Button\nKick: X Button/A Button"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -485,7 +486,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.4
+  m_fontSize: 18.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

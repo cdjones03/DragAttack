@@ -193,6 +193,8 @@ public class Billy_EnemyAI : MonoBehaviour
     // Called by animation events
     public void OnAttackAnimationComplete()
     {
+        Debug.Log("OnAttackAnimationComplete");
+
         isAttackAnimationPlaying = false;
 
         animator.SetBool("Cough", false);

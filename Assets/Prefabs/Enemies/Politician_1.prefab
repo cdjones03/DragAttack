@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4011908116409277664}
   - component: {fileID: 2418793013458877132}
   - component: {fileID: 2233262971836361251}
-  - component: {fileID: 8511518342952530833}
+  - component: {fileID: 6664206360673776658}
   m_Layer: 7
   m_Name: Politician_1
   m_TagString: Enemy
@@ -28,7 +28,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847090609841971096}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -13.69, y: -1.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -37,6 +36,7 @@ Transform:
   - {fileID: 5505414308503170837}
   - {fileID: 4057913569871776022}
   m_Father: {fileID: 0}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!210 &7771800731172581933
 SortingGroup:
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 381b7f4b37b574e469d2f0744dc386d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 40
 --- !u!95 &2233262971836361251
 Animator:
   serializedVersion: 5
@@ -111,7 +111,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8511518342952530833
+--- !u!114 &6664206360673776658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,15 +120,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 847090609841971096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebef44eebeb7a4ec9a0cbcf3150b3aa5, type: 3}
+  m_Script: {fileID: 11500000, guid: fd37b1c7298cf44468757b0ddf9b89ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
   moveSpeed: 2
-  attackRange: 5
-  detectionRange: 10
-  projectilePrefab: {fileID: 1239371183741053010, guid: 9021c548c9c0c4d739dcfd778adca82c, type: 3}
-  attackCooldown: 3
+  attackRange: 3
+  detectionRange: 5
+  projectilePrefab: {fileID: 7242016522281520294, guid: 7cbc5c1af42cd421c90f1e0518de5219, type: 3}
+  attackCooldown: 5
 --- !u!1 &972935593191124432
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,14 +155,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972935593191124432}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0.02, y: 0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8135983359307302727}
   m_Father: {fileID: 7855697197077848136}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6079613390875725393
 SpriteRenderer:
@@ -275,10 +275,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.95325327}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 1, y: 2}
     newSize: {x: 0.9375, y: 2}
     adaptiveTilingThreshold: 0.5
@@ -286,7 +286,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 2}
+  m_Size: {x: 0.6, y: 1.9775705}
   m_EdgeRadius: 0
 --- !u!1 &2017626991947279384
 GameObject:
@@ -314,13 +314,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2017626991947279384}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.02, y: 0.35, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7855697197077848136}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &6985216512400945257
 SpriteRenderer:
@@ -477,11 +477,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7081267985355647757}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5505414308503170837}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

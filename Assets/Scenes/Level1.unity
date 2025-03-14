@@ -1181,7 +1181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456825994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.96, y: -1.7, z: 0.00000038903136}
+  m_LocalPosition: {x: -47.9, y: -1.7, z: 0.00000038903136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17857,10 +17857,11 @@ MonoBehaviour:
   - {fileID: 1059338031}
   enemyPrefabs:
   - {fileID: 847090609841971096, guid: 758b9a1137023416c8fa9bf0ca450c48, type: 3}
+  - {fileID: 847090609841971096, guid: 01d1ac859eb054c69bf94f18b33add56, type: 3}
   battleBounds: {fileID: 1920510265}
   battleTrigger: {fileID: 1622515116}
   totalEnemiesToSpawn: 3
-  timeBetweenSpawns: 3
+  timeBetweenSpawns: 4
   randomizeSpawnPoints: 1
   cameraMinX: 0
   cameraMaxX: 0
@@ -18140,10 +18141,11 @@ MonoBehaviour:
   - {fileID: 80715846}
   enemyPrefabs:
   - {fileID: 847090609841971096, guid: 758b9a1137023416c8fa9bf0ca450c48, type: 3}
+  - {fileID: 847090609841971096, guid: 01d1ac859eb054c69bf94f18b33add56, type: 3}
   battleBounds: {fileID: 57586341}
   battleTrigger: {fileID: 393193170}
-  totalEnemiesToSpawn: 5
-  timeBetweenSpawns: 3
+  totalEnemiesToSpawn: 6
+  timeBetweenSpawns: 4
   randomizeSpawnPoints: 1
   cameraMinX: 0
   cameraMaxX: 0

@@ -13,7 +13,7 @@ public abstract class BaseEnemyAI : MonoBehaviour, IEnemyAI
     }
 
     // Events
-    public event System.Action OnEnemyDeath;
+    public event System.Action<EnemyHealth> OnEnemyDeathAI;
     public event System.Action<EnemyState> OnStateChange;
 
     // Components
@@ -29,7 +29,7 @@ public abstract class BaseEnemyAI : MonoBehaviour, IEnemyAI
 
     // References
     protected Transform player;
-    protected bool isInBattle = true;
+    protected bool isInBattle = false;
 
     protected virtual void Start()
     {
@@ -128,7 +128,7 @@ public abstract class BaseEnemyAI : MonoBehaviour, IEnemyAI
     protected virtual void HandleDeath()
     {
         ChangeState(EnemyState.Dead);
-        OnEnemyDeath?.Invoke();
+        OnEnemyDeathAI?.Invoke(health);
     }
 
     protected virtual void ChangeState(EnemyState newState)
